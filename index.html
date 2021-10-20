@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Fou Mi</title>
+    <link rel="icon" type="image/png" href="images/chifoumi.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!--présentation du jeu -->
+    <div class="container">
+        <div>
+            <h1>Pierre/Feuille/Ciseaux/Lézard/Spock</h1>  <!--&#129299; emoji nerd -->
+        </div>
+
+    
+      <div class="rules">
+            <h2>Règles:</h2>
+                <img src="images/rulespierre.PNG">
+                <p> La pierre écrase <strong>le lézard</strong>  et <strong>les ciseaux</strong>.</p>
+                <img src="images/rulesfeuille.PNG">
+                <p> La feuille enveloppe <strong>la pierre </strong> et désavoue <strong>Spock</strong>.</p>
+                <img src="images/rulesciseau.PNG">
+                <p> Les ciseaux coupent <strong>le papier</strong> et décapite <strong>le lézard</strong>.</p>
+                <img src="images/ruleslézard.PNG">
+                <p> Le lézard empoissonne <strong>Spock</strong> et mange <strong>le papier</strong>.</p>
+                <img src="images/rulesspock.PNG">
+                <p> Spock écrase <strong>les ciseaux</strong> et détruit <strong>la pierre</strong>.</p>     
+        </div> 
+    </div>
+
+    <!--plateau du jeu -->
+    <section class="game">
+        <div class="score">
+            <div class="player-score">
+                <h2>Player</h2>
+                <p>0</p>
+            </div>
+            <div class="computer-score">
+                <h2>Computer</h2>
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="intro">
+            <button>Let's Play</button>
+        </div>
+
+        <div class="match fadeOut">
+            <h3 class="winner">Choisis une option</h3>
+                <div class="hands"> 
+                    <img class="player-hand" src="images/ciseaux.png" alt="">
+                    <img class="computer-hand" src="images/ciseaux.png" alt="">
+                </div> 
+        <div class="option">
+            <button class="pierre">pierre</button>
+            <button class="feuille">feuille</button>
+            <button class="ciseaux">ciseaux</button>
+            <button class="lézard">lézard</button>
+            <button class="spock">spock</button>
+        </div>
+    </div> 
+    </section>
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
